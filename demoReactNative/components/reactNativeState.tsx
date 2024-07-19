@@ -11,7 +11,7 @@ const ReactNativeState = () => {
 
     return (
         <View>
-            <Text style={{ fontSize: 30 }}>State of React Native</Text>
+            <Text style={{ fontSize: 30 }}>{name}</Text>
             <Button title='Press Me' onPress={setStateName}/>
 
         </View>
