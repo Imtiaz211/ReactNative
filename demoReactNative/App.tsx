@@ -1,5 +1,9 @@
-import React from 'react';
+{/* useState for learning */}
+
+import React, {useState} from 'react';
 import VariableAndFunction from './components/firstVariableFunctions';
+import ReactNativeButtons from './components/buttonsReactNative';
+import ReactNativeState from './components/reactNativeState';
 
 import {
   Text,
@@ -11,7 +15,9 @@ function App(): React.JSX.Element {
 
   return (
      <View>
-      <VariableAndFunction/>
+      <ReactNativeState/>
+      {/*<ReactNativeButtons/> */}
+      {/*<VariableAndFunction/> */}
      </View>
   );
 }
