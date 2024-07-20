@@ -9,6 +9,7 @@ import BasicStyleReactNative from './components/basicStyleReactNative';
 import { ExStyle } from './components/externalStyleReactNative';
 import TextInputReactNative from './components/textInputReactNative';
 import FormInputReactNative from './components/formInputReactNative';
+import ListArrayReactNative from './components/listOfArrayReactNative';
 
 import {
   Button,
@@ -22,8 +23,10 @@ function App(): React.JSX.Element {
   const [argumens, setArguments] = useState("Imtiaz");
   return (
     <View>
-      
-      <FormInputReactNative />
+
+
+      <ListArrayReactNative />
+      {/*<FormInputReactNative />*/}
 
       {/*<TextInputReactNative /> */}
 
