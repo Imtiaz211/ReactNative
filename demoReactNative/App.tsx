@@ -16,7 +16,9 @@ import {
   Text,
   View,
 } from 'react-native';
+
 import UserData from './components/userData';
+import ListMapFunction from './components/listWithMapReactNative';
 
 function App(): React.JSX.Element {
 
@@ -25,7 +27,10 @@ function App(): React.JSX.Element {
     <View>
 
 
-      <ListArrayReactNative />
+      <ListMapFunction/>
+
+      {/*<ListArrayReactNative /> */}
+
       {/*<FormInputReactNative />*/}
 
       {/*<TextInputReactNative /> */}
