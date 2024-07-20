@@ -8,6 +8,7 @@ import PropsReactNative from './components/propsReactNative';
 import BasicStyleReactNative from './components/basicStyleReactNative';
 import { ExStyle } from './components/externalStyleReactNative';
 import TextInputReactNative from './components/textInputReactNative';
+import FormInputReactNative from './components/formInputReactNative';
 
 import {
   Button,
@@ -21,8 +22,10 @@ function App(): React.JSX.Element {
   const [argumens, setArguments] = useState("Imtiaz");
   return (
     <View>
+      
+      <FormInputReactNative />
 
-      <TextInputReactNative />
+      {/*<TextInputReactNative /> */}
 
       {/* we can add array of style [ExStyle.textBox, style] 
 
