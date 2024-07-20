@@ -11,14 +11,11 @@ import TextInputReactNative from './components/textInputReactNative';
 import FormInputReactNative from './components/formInputReactNative';
 import ListArrayReactNative from './components/listOfArrayReactNative';
 
-import {
-  Button,
-  Text,
-  View,
-} from 'react-native';
+import {Button,Text,View} from 'react-native';
 
 import UserData from './components/userData';
 import ListMapFunction from './components/listWithMapReactNative';
+import GridReactNative from './components/gridReactNative';
 
 function App(): React.JSX.Element {
 
@@ -27,7 +24,9 @@ function App(): React.JSX.Element {
     <View>
 
 
-      <ListMapFunction/>
+      <GridReactNative/>
+
+      {/*<ListMapFunction/> */}
 
       {/*<ListArrayReactNative /> */}
 

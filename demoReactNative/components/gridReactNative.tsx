@@ -1,6 +1,5 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
-const ListMapFunction = () => {
-
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+const GridReactNative = () => {
     const user = [
         {
             id: 1,
@@ -57,29 +56,58 @@ const ListMapFunction = () => {
         {
             id: 14,
             name: "Imtiaz 14"
+        },
+        {
+            id: 15,
+            name: "Imtiaz 15"
+        },
+        {
+            id: 16,
+            name: "Imtiaz 16"
+        },
+        {
+            id: 17,
+            name: "Imtiaz 17"
+        },
+        {
+            id: 18,
+            name: "Imtiaz 18"
+        },
+        {
+            id: 19,
+            name: "Imtiaz 19"
+        },
+        {
+            id: 20,
+            name: "Imtiaz 20"
         }
     ]
     return (
         <View>
-            <Text style={{ fontSize: 31 }}> List with Map function</Text>
-            <ScrollView style={{ marginBottom: 80 }}>
+            <Text style={{ fontSize: 30 }}>Grid With dynamic Data</Text>
+            <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
+                
                 {
-                    user.map((item) => <Text style={styles.item}>{item.name}</Text>)
+                    user.map((item) => <Text style={Style.item}>{item.name}</Text>)
                 }
-            </ScrollView>
+                
+                
+            </View>
         </View>
-    );
-};
+    )
+}
 
-const styles = StyleSheet.create({
+const Style = StyleSheet.create({
     item: {
-        fontSize: 24,
-        padding: 10,
-        color: "#fff",
+        fontSize: 25,
         backgroundColor: 'blue',
-        borderColor: 'black',
-        borderWidth: 1,
-        margin: 10
+        color: '#fff',
+        margin: 5,
+        padding: 5,
+        width: 120,
+        height: 120,
+        textAlignVertical: 'center',
+        textAlign: 'center'
     }
 })
-export default ListMapFunction;
+export default GridReactNative;
