@@ -17,6 +17,7 @@ import UserData from './components/userData';
 import ListMapFunction from './components/listWithMapReactNative';
 import GridReactNative from './components/gridReactNative';
 import LoopComponentReactNative from './components/componentLoopReactNative';
+import SectionListReactNative from './components/sectionListReactNative';
 
 function App(): React.JSX.Element {
 
@@ -24,8 +25,10 @@ function App(): React.JSX.Element {
   return (
     <View>
 
-      <LoopComponentReactNative />
+      <SectionListReactNative />
       
+      {/*<LoopComponentReactNative />*/}
+
       {/*<GridReactNative/> */}
 
       {/*<ListMapFunction/> */}
