@@ -86,11 +86,9 @@ const GridReactNative = () => {
         <View>
             <Text style={{ fontSize: 30 }}>Grid With dynamic Data</Text>
             <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
-                
                 {
                     user.map((item) => <Text style={Style.item}>{item.name}</Text>)
                 }
-                
                 
             </View>
         </View>
