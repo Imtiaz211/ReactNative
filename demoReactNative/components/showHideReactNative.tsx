@@ -18,7 +18,7 @@ const ShowHideReactNative = () => {
 const ShowHide = () => {
 let timer=setInterval(()=> {
     console.warn("Timer called");
-}, 2000)
+}, 2000) // This is very important when you preform some task in background.
 
     useEffect(()=>{
       return ()=> clearInterval(timer) //console.warn("Hello");
