@@ -6,12 +6,14 @@ import UseEffectReactiveNative from "./components/useEffectReactNative";
 import ShowHideReactNative from "./components/showHideReactNative";
 import ResponsiveUI from "./components/responsiveUIReactNative";
 import TouchableReactNative from "./components/touchableHighlightReactNative";
+import RadioButtonReactNative from "./components/radioButtonReactNative";
 
 class Home extends Component {
     render() {
         return (
-           <View>
-            <TouchableReactNative/>
+           <View style={Style.mainS}>
+            <RadioButtonReactNative/>
+            {/* <TouchableReactNative/> */}
                 {/* <ResponsiveUI /> */}
                 {/*<ShowHideReactNative/>*/}
                 {/*<UseEffectReactiveNative/>*/}
@@ -22,4 +24,11 @@ class Home extends Component {
     }
 }
 
+const Style=StyleSheet.create({
+    mainS:{
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center'
+    }
+})
 export default Home;
