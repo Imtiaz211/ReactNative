@@ -9,15 +9,20 @@ import TouchableReactNative from "./components/touchableHighlightReactNative";
 import RadioButtonReactNative from "./components/radioButtonReactNative";
 import DynamicRadioButtonReactNative from "./components/dynamicRadioButtonReactNative";
 import ActivityIndicatorReactNative from "./components/activityIndicatorReactNative";
+import ModalReactNative from "./components/modalReactNative";
+import PressableReactNative from "./components/pressableReactNative";
 
 class Home extends Component {
     render() {
         return (
             <View style={Style.main}>
+                
+                <PressableReactNative/>
 
-                <ActivityIndicatorReactNative />
 
 
+                {/* <ModalReactNative /> */}
+                {/* <ActivityIndicatorReactNative /> */}
                 {/* <DynamicRadioButtonReactNative/> */}
                 {/* <RadioButtonReactNative/> */}
                 {/* <TouchableReactNative/> */}
@@ -34,7 +39,8 @@ const Style = StyleSheet.create({
     main: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingBottom: 20
     }
 })
 export default Home;
