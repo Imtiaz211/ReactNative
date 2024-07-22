@@ -4,13 +4,18 @@ const PressableReactNative = () => {
     return (
         <View>
             <Pressable
-                onPress={() => { console.warn("Normal button press");
+                onPress={() => {
+                    console.warn("Normal button press");
                 }}
-                onLongPress={() => {console.warn("On long press");
-                 }}
-                onPressIn={() => { console.warn("On Button Press In");
+                // Long press delay time is 0.5 sec
+                onLongPress={() => {
+                    console.warn("On long press");
                 }}
-                onPressOut={() => { console.warn("on Leave button press");
+                onPressIn={() => {
+                    console.warn("On Button Press In");
+                }}
+                onPressOut={() => {
+                    console.warn("on Leave button press");
                 }}
             >
                 <Text style={Style.pressableBTN}>
@@ -24,16 +29,14 @@ const PressableReactNative = () => {
 const Style = StyleSheet.create({
     pressableBTN: {
         fontSize: 25,
-        backgroundColor:'black',
-        color:'#fff',
-        padding:10,
+        backgroundColor: 'black',
+        color: '#fff',
+        padding: 10,
         margin: 10,
-        borderRadius:10,
-        textAlign:'center',
-        shadowColor:'#000',
-        elevation:5
-        
-
+        borderRadius: 10,
+        textAlign: 'center',
+        shadowColor: '#000',
+        elevation: 5
     }
 })
 export default PressableReactNative

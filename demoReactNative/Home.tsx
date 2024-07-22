@@ -11,16 +11,16 @@ import DynamicRadioButtonReactNative from "./components/dynamicRadioButtonReactN
 import ActivityIndicatorReactNative from "./components/activityIndicatorReactNative";
 import ModalReactNative from "./components/modalReactNative";
 import PressableReactNative from "./components/pressableReactNative";
+import StatusBarReaactNative from "./components/statusBarReactNative";
 
 class Home extends Component {
     render() {
         return (
             <View style={Style.main}>
                 
-                <PressableReactNative/>
-
-
-
+                <StatusBarReaactNative/>
+                
+                {/* <PressableReactNative/> */}
                 {/* <ModalReactNative /> */}
                 {/* <ActivityIndicatorReactNative /> */}
                 {/* <DynamicRadioButtonReactNative/> */}
