@@ -12,14 +12,16 @@ import ActivityIndicatorReactNative from "./components/activityIndicatorReactNat
 import ModalReactNative from "./components/modalReactNative";
 import PressableReactNative from "./components/pressableReactNative";
 import StatusBarReaactNative from "./components/statusBarReactNative";
+import PlatformReactNative from "./components/platformReactNative";
 
 class Home extends Component {
     render() {
         return (
             <View style={Style.main}>
-                
-                <StatusBarReaactNative/>
-                
+
+                <PlatformReactNative />
+
+                {/* <StatusBarReaactNative/> */}
                 {/* <PressableReactNative/> */}
                 {/* <ModalReactNative /> */}
                 {/* <ActivityIndicatorReactNative /> */}
