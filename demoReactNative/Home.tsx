@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
+import {WebView} from 'react-native-webview'
 
 import ClassComponentReactNative from "./components/classComponentReactNative";
 import UseEffectReactiveNative from "./components/useEffectReactNative";
@@ -13,14 +14,16 @@ import ModalReactNative from "./components/modalReactNative";
 import PressableReactNative from "./components/pressableReactNative";
 import StatusBarReaactNative from "./components/statusBarReactNative";
 import PlatformReactNative from "./components/platformReactNative";
+import NPMReactNative from "./components/npmReactNative";
 
 class Home extends Component {
     render() {
         return (
-            <View style={Style.main}>
+            <View>
 
-                <PlatformReactNative />
+                <NPMReactNative />
 
+                {/* <PlatformReactNative /> */}
                 {/* <StatusBarReaactNative/> */}
                 {/* <PressableReactNative/> */}
                 {/* <ModalReactNative /> */}
