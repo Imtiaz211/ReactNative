@@ -2,19 +2,19 @@ import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import {WebView} from 'react-native-webview'
 
-import ClassComponentReactNative from "./components/classComponentReactNative";
-import UseEffectReactiveNative from "./components/useEffectReactNative";
-import ShowHideReactNative from "./components/showHideReactNative";
-import ResponsiveUI from "./components/responsiveUIReactNative";
-import TouchableReactNative from "./components/touchableHighlightReactNative";
-import RadioButtonReactNative from "./components/radioButtonReactNative";
-import DynamicRadioButtonReactNative from "./components/dynamicRadioButtonReactNative";
-import ActivityIndicatorReactNative from "./components/activityIndicatorReactNative";
-import ModalReactNative from "./components/modalReactNative";
-import PressableReactNative from "./components/pressableReactNative";
-import StatusBarReaactNative from "./components/statusBarReactNative";
-import PlatformReactNative from "./components/platformReactNative";
-import NPMReactNative from "./components/npmReactNative";
+import ClassComponentReactNative from "../components/classComponentReactNative";
+import UseEffectReactiveNative from "../components/useEffectReactNative";
+import ShowHideReactNative from "../components/showHideReactNative";
+import ResponsiveUI from "../components/responsiveUIReactNative";
+import TouchableReactNative from "../components/touchableHighlightReactNative";
+import RadioButtonReactNative from "../components/radioButtonReactNative";
+import DynamicRadioButtonReactNative from "../components/dynamicRadioButtonReactNative";
+import ActivityIndicatorReactNative from "../components/activityIndicatorReactNative";
+import ModalReactNative from "../components/modalReactNative";
+import PressableReactNative from "../components/pressableReactNative";
+import StatusBarReaactNative from "../components/statusBarReactNative";
+import PlatformReactNative from "../components/platformReactNative";
+import NPMReactNative from "../components/npmReactNative";
 
 class Home extends Component {
     render() {
