@@ -1,24 +1,24 @@
 {/* useState for learning */ }
 
 import React, { useState } from 'react';
-import VariableAndFunction from './components/firstVariableFunctions';
-import ReactNativeButtons from './components/buttonsReactNative';
-import ReactNativeState from './components/reactNativeState';
-import PropsReactNative from './components/propsReactNative';
-import BasicStyleReactNative from './components/basicStyleReactNative';
-import { ExStyle } from './components/externalStyleReactNative';
-import TextInputReactNative from './components/textInputReactNative';
-import FormInputReactNative from './components/formInputReactNative';
-import ListArrayReactNative from './components/listOfArrayReactNative';
+import VariableAndFunction from '../components/firstVariableFunctions';
+import ReactNativeButtons from '../components/buttonsReactNative';
+import ReactNativeState from '../components/reactNativeState';
+import PropsReactNative from '../components/propsReactNative';
+import BasicStyleReactNative from '../components/basicStyleReactNative';
+import { ExStyle } from '../components/externalStyleReactNative';
+import TextInputReactNative from '../components/textInputReactNative';
+import FormInputReactNative from '../components/formInputReactNative';
+import ListArrayReactNative from '../components/listOfArrayReactNative';
 
 import { Button, Text, View } from 'react-native';
 
-import UserData from './components/userData';
-import ListMapFunction from './components/listWithMapReactNative';
-import GridReactNative from './components/gridReactNative';
-import LoopComponentReactNative from './components/componentLoopReactNative';
-import SectionListReactNative from './components/sectionListReactNative';
-import ClassComponentReactNative from './components/classComponentReactNative';
+import UserData from '../components/userData';
+import ListMapFunction from '../components/listWithMapReactNative';
+import GridReactNative from '../components/gridReactNative';
+import LoopComponentReactNative from '../components/componentLoopReactNative';
+import SectionListReactNative from '../components/sectionListReactNative';
+import ClassComponentReactNative from '../components/classComponentReactNative';
 
 function App(): React.JSX.Element {
 

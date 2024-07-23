@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import {WebView} from 'react-native-webview'
 
 import ClassComponentReactNative from "../components/classComponentReactNative";
 import UseEffectReactiveNative from "../components/useEffectReactNative";
