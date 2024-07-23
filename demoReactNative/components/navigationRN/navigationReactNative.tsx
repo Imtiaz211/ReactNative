@@ -1,29 +1,38 @@
-import { Text, Button, View } from 'react-native'
+import { Button } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { Login } from './loginPage'
+import { Home } from './homePage'
+import { HeaderLeftRN } from './headerLeft'
+import { HeaderRightRN } from './headerRight'
+
 
 const Stack = createNativeStackNavigator()
+
 const NavigationStackReactNative = () => {
+
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{
-                   headerStyle: {
-                       backgroundColor: 'blue'
-                   },
-                   headerTintColor:'orange',
-                   headerTitleStyle:{
-                       fontSize:25
-                   }
+                headerStyle: {
+                    backgroundColor: 'blue'
+                },
+                headerTintColor: 'orange',
+                headerTitleStyle: {
+                    fontSize: 25
+                }
             }}>
                 <Stack.Screen name='Login' component={Login}
                     options={{
                         title: 'User Login',
+                        headerLeft: () => <HeaderLeftRN />,
+                        headerRight: () => <HeaderRightRN />,
                         headerStyle: {
                             backgroundColor: 'blue'
                         },
-                        headerTintColor:'orange',
-                        headerTitleStyle:{
-                            fontSize:25
+                        headerTintColor: 'orange',
+                        headerTitleStyle: {
+                            fontSize: 25
                         }
                     }}
                 />
@@ -32,23 +41,5 @@ const NavigationStackReactNative = () => {
             </Stack.Navigator>
         </NavigationContainer>
     )
-}
-
-const Home = () => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 30 }}>Home Screen 1</Text>
-        </View>
-    )
-}
-
-const Login = (props) => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 30 }}>Login Screen</Text>
-            <Button title='Go to home page' onPress={() => props.navigation.navigate('Home')} />
-        </View>
-    )
-
 }
 export default NavigationStackReactNative
