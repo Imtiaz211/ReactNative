@@ -7,3 +7,4 @@ const WebviewHome = () => {
         // <WebView source={{ uri: "https://google.com" }} />
     )
 }
+export default WebviewHome
