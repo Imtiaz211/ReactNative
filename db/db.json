@@ -1,0 +1,67 @@
+{
+  "user": [
+    {
+      "name": "Imtiaz Ahmad",
+      "age": 35,
+      "email": "imtiazahmad@gmail.com"
+    },
+    {
+      "name": "Ishtiyaque Ahmad",
+      "age": 37,
+      "email": "ishtiyaque@gmail.com"
+    },
+    {
+      "name": "Gulabsha Parveen",
+      "age": 28,
+      "email": "wgulabsha@gmail.com"
+    },
+    {
+      "name": "Imtiaz Ahmad Ansari",
+      "age": 36,
+      "email": "test136@gmail.com",
+      "id": "cf8b"
+    },
+    {
+      "id": "f8cd",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "b319",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "a8b4",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "d5e2",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "8331",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "6c3c",
+      "name": "Imtiaz Ahmad",
+      "age": 30,
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "b65c",
+      "name": "Imtiaz iOS, flutter, react native",
+      "age": 30,
+      "email": "test1@gmail.com"
+    }
+  ]
+}

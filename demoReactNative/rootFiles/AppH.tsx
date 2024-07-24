@@ -5,11 +5,13 @@ import NavigationStackReactNative from "../components/navigationRN/navigationRea
 import { TabbarReactNative } from "../components/navigationRN/tabbarReactNative";
 import { APICallReactNative } from "../components/apiCallReactNative/apiCallReactNative";
 import { ListAPICallReactNative } from "../components/apiCallReactNative/listAPICallReactNative";
+import { FlatListAPIRN } from "../components/apiCallReactNative/flatListAPICallRN";
 
 class AppH extends Component {
     render() {
         return (
-            <ListAPICallReactNative/>
+            <FlatListAPIRN/>
+            // <ListAPICallReactNative/>
             // <APICallReactNative />
             // <TabbarReactNative />
             // <NavigationStackReactNative/>
