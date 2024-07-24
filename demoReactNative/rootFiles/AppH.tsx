@@ -3,11 +3,13 @@ import { View, Text } from 'react-native'
 
 import NavigationStackReactNative from "../components/navigationRN/navigationReactNative";
 import { TabbarReactNative } from "../components/navigationRN/tabbarReactNative";
+import { APICallReactNative } from "../components/apiCallReactNative/apiCallReactNative";
 
 class AppH extends Component {
     render() {
         return (
-            <TabbarReactNative />
+            <APICallReactNative />
+            // <TabbarReactNative />
             // <NavigationStackReactNative/>
         )
     }
