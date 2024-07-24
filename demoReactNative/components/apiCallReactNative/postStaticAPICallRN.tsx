@@ -4,7 +4,7 @@ export const POSTAPIReactNative = () => {
 
     const postData = async () => {
         const data = {
-            "name": "ImtiaziOS",
+            "name": "ImtiaziOS_ReactNative",
             "email": "test@123.com",
             "age": 32
         }
