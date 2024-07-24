@@ -6,11 +6,13 @@ import { TabbarReactNative } from "../components/navigationRN/tabbarReactNative"
 import { APICallReactNative } from "../components/apiCallReactNative/apiCallReactNative";
 import { ListAPICallReactNative } from "../components/apiCallReactNative/listAPICallReactNative";
 import { FlatListAPIRN } from "../components/apiCallReactNative/flatListAPICallRN";
+import { CallJSONServer } from "../components/apiCallReactNative/callJSONServerRN";
 
 class AppH extends Component {
     render() {
         return (
-            <FlatListAPIRN/>
+            <CallJSONServer/>
+            // <FlatListAPIRN/>
             // <ListAPICallReactNative/>
             // <APICallReactNative />
             // <TabbarReactNative />
