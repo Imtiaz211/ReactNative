@@ -8,12 +8,14 @@ import { ListAPICallReactNative } from "../components/apiCallReactNative/listAPI
 import { FlatListAPIRN } from "../components/apiCallReactNative/flatListAPICallRN";
 import { CallJSONServer } from "../components/apiCallReactNative/callJSONServerRN";
 import { POSTAPIReactNative } from "../components/apiCallReactNative/postStaticAPICallRN";
+import { POSTAPIRFormInpureactNative } from "../components/apiCallReactNative/postAPIFormInputRN";
 
 
 class AppH extends Component {
     render() {
         return (
-            <POSTAPIReactNative/>
+            <POSTAPIRFormInpureactNative/>
+            // <POSTAPIReactNative/>
             // <CallJSONServer/>
             // <FlatListAPIRN/>
             // <ListAPICallReactNative/>
