@@ -11,7 +11,7 @@ export const ListAPICallReactNative = () => {
     }
     useEffect(() => {
         getAPIData()
-    })
+    }, [])
     return (
         <ScrollView>
             <Text style={{ fontSize: 30 }}>List API Call</Text>
