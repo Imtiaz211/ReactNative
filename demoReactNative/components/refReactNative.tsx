@@ -6,8 +6,8 @@ export const RefReactNative = () => {
     const updateRef = () => {
         input.current.focus();
         input.current.setNativeProps({
-fontSize:24,
-color:'blue'
+            fontSize: 24,
+            color: 'blue'
         })
     }
 

@@ -12,12 +12,14 @@ import { POSTAPIRFormInpureactNative } from "../components/apiCallReactNative/po
 import { ListAPIData } from "../components/apiCallReactNative/listAPIDataRN";
 import { SearchAPIReactNative } from "../components/searchRN/searchAPIReactNative";
 import { RefReactNative } from "../components/refReactNative";
+import { AsyncStorageReactNative } from "../components/asyncStorage/asyncStorageRN";
 
 
 class AppH extends Component {
     render() {
         return (
-            <RefReactNative/>
+            <AsyncStorageReactNative/>
+            // <RefReactNative/>
             // <SearchAPIReactNative/>
             // <ListAPIData/>
             // <POSTAPIRFormInpureactNative/>
