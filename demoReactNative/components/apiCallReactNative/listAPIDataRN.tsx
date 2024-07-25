@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { StyleSheet, View, Text, Button, Modal, TextInput } from 'react-native'
+import { StyleSheet, View, Text, Button, Modal, TextInput, ScrollView } from 'react-native'
 
 export const ListAPIData = () => {
 
@@ -45,24 +45,29 @@ export const ListAPIData = () => {
 
     return (
         <View style={style.container}>
-            {
-                data.length ?
-                    data.map((item) => <View style={style.dataWrapper}>
-                        <View style={{ flex: 1 }}><Text>{item.name}</Text></View>
-                        <View style={{ flex: 1 }}><Text>{item.age}</Text></View>
-                        <View style={{ flex: 1 }}><Text>{item.email}</Text></View>
-                        <View style={{ flex: 1 }}><Button
-                            title='Update' onPress={() => update(item)} />
-                        </View>
-                        <View style={{ flex: 1, paddingLeft: 10 }}><Button
-                            title='Delete' onPress={() => deleteUser(item.id)} /></View>
-                    </View>)
-                    :
-                    null
-            }
-
+            <ScrollView>
+                {
+                    data.length ?
+                        data.map((item) => <View style={style.dataWrapper}>
+                            <View style={{ flex: 1 }}><Text>{item.name}</Text></View>
+                            <View style={{ flex: 1 }}><Text>{item.age}</Text></View>
+                            <View style={{ flex: 1 }}><Text>{item.email}</Text></View>
+                            <View style={{ flex: 1 }}><Button
+                                title='Update' onPress={() => update(item)} />
+                            </View>
+                            <View style={{ flex: 1, paddingLeft: 10 }}><Button
+                                title='Delete' onPress={() => deleteUser(item.id)} /></View>
+                        </View>)
+                        :
+                        null
+                }
+            </ScrollView>
             <Modal visible={showModal} transparent={true}>
-                <UserModal setShowModal={setShowModal} selectedUser={selectedUser} />
+                <UserModal
+                    setShowModal={setShowModal}
+                    selectedUser={selectedUser}
+                    getData={getData}
+                />
             </Modal>
 
         </View>
@@ -81,34 +86,49 @@ const UserModal = (props) => {
             setModalAge(props.selectedUser.age.toString())
             setModalEmail(props.selectedUser.email)
         }
-    },[props.selectedUser])
+    }, [props.selectedUser])
+
+
+    const updateInfo = async () => {
+        const url = "http://192.168.4.22:3000/user"
+        const id = props.selectedUser.id
+        let result = await fetch(`${url}/${id}`, {
+            method: "Put",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({name:modalName, age:modalAge, email:modalEmail})
+        })
+        result = await result.json();
+        if (result) {
+            console.warn(result);
+            props.setShowModal(false)
+            props.getData()
+        }
+    }
+
     return (
         <View style={style.centeredView}>
             <View style={style.modalView}>
                 <Text style={{ fontSize: 20 }}>Update User:-{props.selectedUser.name}</Text>
-
-
                 <TextInput
                     style={style.input}
                     placeholder='User Name'
                     value={modalName}
-                    onChangeText={(text)=> setModalName(text)}
+                    onChangeText={(text) => setModalName(text)}
                 />
-
                 <TextInput
                     style={style.input}
                     placeholder='User Age'
                     value={modalAge}
-                    onChangeText={(text)=> setModalAge(text)}
+                    onChangeText={(text) => setModalAge(text)}
                 />
                 <TextInput
                     style={style.input}
                     placeholder='User Email'
                     value={modalEmail}
-                    onChangeText={(text)=> setModalEmail(text)}
+                    onChangeText={(text) => setModalEmail(text)}
                 />
                 <View style={{ marginBottom: 15 }}>
-                    <Button title='Update Info' />
+                    <Button title='Update Info' onPress={() => updateInfo(props.selectedUser)} />
                 </View>
                 <Button title='Close' onPress={() => props.setShowModal(false)} />
             </View>

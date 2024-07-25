@@ -2,7 +2,7 @@
   "user": [
     {
       "name": "Imtiaz Ahmad",
-      "age": 35,
+      "age": "20",
       "email": "imtiazahmad@gmail.com",
       "id": "d058"
     },
@@ -169,16 +169,16 @@
       "email": "learning@test.com"
     },
     {
-      "id": "70d2",
-      "name": "",
-      "age": 0,
-      "email": ""
+      "name": "fill up",
+      "age": "100",
+      "email": "life@test.com",
+      "id": "70d2"
     },
     {
-      "id": "d6d2",
-      "name": "",
-      "age": 0,
-      "email": ""
+      "name": "fillup2",
+      "age": "101",
+      "email": "fillup2@test.com",
+      "id": "d6d2"
     },
     {
       "id": "9224",
