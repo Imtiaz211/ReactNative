@@ -10,12 +10,14 @@ import { CallJSONServer } from "../components/apiCallReactNative/callJSONServerR
 import { POSTAPIReactNative } from "../components/apiCallReactNative/postStaticAPICallRN";
 import { POSTAPIRFormInpureactNative } from "../components/apiCallReactNative/postAPIFormInputRN";
 import { ListAPIData } from "../components/apiCallReactNative/listAPIDataRN";
+import { SearchAPIReactNative } from "../components/searchRN/searchAPIReactNative";
 
 
 class AppH extends Component {
     render() {
         return (
-            <ListAPIData/>
+            <SearchAPIReactNative/>
+            // <ListAPIData/>
             // <POSTAPIRFormInpureactNative/>
             // <POSTAPIReactNative/>
             // <CallJSONServer/>
