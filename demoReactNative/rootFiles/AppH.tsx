@@ -13,12 +13,14 @@ import { ListAPIData } from "../components/apiCallReactNative/listAPIDataRN";
 import { SearchAPIReactNative } from "../components/searchRN/searchAPIReactNative";
 import { RefReactNative } from "../components/refReactNative";
 import { AsyncStorageReactNative } from "../components/asyncStorage/asyncStorageRN";
+import { ReduxFileRN } from "../components/redux/rootFileRedux";
 
 
 class AppH extends Component {
     render() {
         return (
-            <AsyncStorageReactNative/>
+            <ReduxFileRN/>
+            // <AsyncStorageReactNative/>
             // <RefReactNative/>
             // <SearchAPIReactNative/>
             // <ListAPIData/>
