@@ -1,7 +1,7 @@
 import { View, Text, Image, ScrollView, Button } from 'react-native'
 import { HeaderReduxFileRN } from './headerReactNative'
 import { ProductReduxFileRN } from './productReactNative'
-export const ReduxFileRN = (navi) => {
+export const ReduxFileRN = (props) => {
     const products = [
         {
             name: "Samsumg",
@@ -37,7 +37,7 @@ export const ReduxFileRN = (navi) => {
     ]
     return (
         <View>
-            <Button title='User list screen' onPress={()=> navi.navigate("ListScren")}/>
+            <Button title='User list screen' onPress={()=> props.navigation.navigate("Listscreen")}/>
             <HeaderReduxFileRN />
             <ScrollView>
             {

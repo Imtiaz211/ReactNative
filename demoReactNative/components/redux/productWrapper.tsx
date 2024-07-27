@@ -11,7 +11,7 @@ export const ProductWrapperRN = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="Home" component={ReduxFileRN}/>
-                <Stack.Screen name="List Scren" component={GridReactNative}/>
+                <Stack.Screen name="Listscreen" component={GridReactNative}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
