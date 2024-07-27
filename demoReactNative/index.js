@@ -7,5 +7,12 @@ import {AppRegistry} from 'react-native';
 //import WebviewHome from './rootFiles/WebviewHome';
 import AppH from './rootFiles/AppH'
 import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => AppH);
+import { Provider } from 'react-redux';
+import store from './components/redux/storeReducerRN';
+const AppRedux = () => (
+    <Provider store={store}>
+        <AppH/>
+    </Provider>
+)
+// AppRegistry.registerComponent(appName, () => AppH);
+AppRegistry.registerComponent(appName, () => AppRedux);
