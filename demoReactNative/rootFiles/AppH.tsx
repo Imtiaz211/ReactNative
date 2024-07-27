@@ -14,12 +14,13 @@ import { SearchAPIReactNative } from "../components/searchRN/searchAPIReactNativ
 import { RefReactNative } from "../components/refReactNative";
 import { AsyncStorageReactNative } from "../components/asyncStorage/asyncStorageRN";
 import { ReduxFileRN } from "../components/redux/rootFileRedux";
+import { ProductWrapperRN } from "../components/redux/productWrapper";
 
 
 class AppH extends Component {
     render() {
         return (
-            <ReduxFileRN/>
+            <ProductWrapperRN/>
             // <AsyncStorageReactNative/>
             // <RefReactNative/>
             // <SearchAPIReactNative/>
