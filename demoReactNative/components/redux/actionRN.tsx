@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_FROM_CART,USER_LIST } from './constantRN'
+import {
+    ADD_TO_CART,
+    REMOVE_FROM_CART,
+    USER_LIST
+} from './constantRN'
 
 export function addToCard(item) {
     return {

@@ -11,6 +11,7 @@ export const UserListReactNative = () => {
     useEffect(() => {
         dispatch(getUserList())
     }, [])
+    
     console.warn(userList.length);
 
     return (
