@@ -1,19 +1,19 @@
 import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import ClassComponentReactNative from "../components/classComponentReactNative";
-import UseEffectReactiveNative from "../components/useEffectReactNative";
-import ShowHideReactNative from "../components/showHideReactNative";
-import ResponsiveUI from "../components/responsiveUIReactNative";
-import TouchableReactNative from "../components/touchableHighlightReactNative";
-import RadioButtonReactNative from "../components/radioButtonReactNative";
-import DynamicRadioButtonReactNative from "../components/dynamicRadioButtonReactNative";
-import ActivityIndicatorReactNative from "../components/activityIndicatorReactNative";
-import ModalReactNative from "../components/modalReactNative";
-import PressableReactNative from "../components/pressableReactNative";
-import StatusBarReaactNative from "../components/statusBarReactNative";
-import PlatformReactNative from "../components/platformReactNative";
-import NPMReactNative from "../components/npmReactNative";
+import ClassComponentReactNative from "../components/mixedAllComponents/classComponentReactNative";
+import UseEffectReactiveNative from "../components/mixedAllComponents/useEffectReactNative";
+import ShowHideReactNative from "../components/mixedAllComponents/showHideReactNative";
+import ResponsiveUI from "../components/mixedAllComponents/responsiveUIReactNative";
+import TouchableReactNative from "../components/mixedAllComponents/touchableHighlightReactNative";
+import RadioButtonReactNative from "../components/mixedAllComponents/radioButtonReactNative";
+import DynamicRadioButtonReactNative from "../components/mixedAllComponents/dynamicRadioButtonReactNative";
+import ActivityIndicatorReactNative from "../components/mixedAllComponents/activityIndicatorReactNative";
+import ModalReactNative from "../components/mixedAllComponents/modalReactNative";
+import PressableReactNative from "../components/mixedAllComponents/pressableReactNative";
+import StatusBarReaactNative from "../components/mixedAllComponents/statusBarReactNative";
+import PlatformReactNative from "../components/mixedAllComponents/platformReactNative";
+import NPMReactNative from "../components/mixedAllComponents/npmReactNative";
 
 class Home extends Component {
     render() {

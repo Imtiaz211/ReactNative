@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import CustomModalReactNative from '../components/customModalReactNative'
+import CustomModalReactNative from '../components/mixedAllComponents/customModalReactNative'
 const WebviewHome = () => {
     return (
         <View style={Styles.container}>
