@@ -1,10 +1,13 @@
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 
 export const BackgroundImageLearning = () => {
+
+    const image = { uri:'https://legacy.reactjs.org/logo-og.png' };
+
     return (
         <View>
-            <Text>Imtiaz Ahmad</Text>
-            <ImageBackground source={{ uri: "https://as1.ftcdn.net/v2/jpg/07/26/65/90/1000_F_726659088_uiT5iJX79jQYcuKAmTvaO4RuMqEaDYxC.jpg"}}
+            <Text style={StyleSheetBackground.text}>Imtiaz</Text>
+            <ImageBackground source={image}
                 style={StyleSheetBackground.background}
                 resizeMode="cover"
             >
@@ -22,9 +25,9 @@ const StyleSheetBackground = StyleSheet.create({
 
     },
     text: {
-        color: 'white',
+        color: 'green',
         fontSize: 42,
-        lineHeight: 84,
+        // lineHeight: 84,
         fontWeight: 'bold',
         textAlign: 'center'
 
