@@ -6,7 +6,7 @@ export const BackgroundImageLearning = () => {
 
     return (
         <View>
-            <Text style={StyleSheetBackground.text}>Imtiaz</Text>
+            <Text style={StyleSheetBackground.text}>Imtiaz Ahmad Ansari village imadpur post matiyar, Saran Bihar</Text>
             <ImageBackground source={image}
                 style={StyleSheetBackground.background}
                 resizeMode="cover"
