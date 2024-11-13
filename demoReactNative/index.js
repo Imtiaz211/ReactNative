@@ -7,7 +7,8 @@ import {AppRegistry} from 'react-native';
 //import WebviewHome from './rootFiles/WebviewHome';
 // import AppH from './rootFiles/AppH'
 import HomeLearning from './rootFiles/HomeLearning';
-import {name as appName} from './app.json';
+// import {name as appName} from './app.json';
+import {name as demoName} from './app.json'
 import { Provider } from 'react-redux';
 import store from './components/redux/storeReducerRN';
 const AppRedux = () => (
@@ -17,4 +18,5 @@ const AppRedux = () => (
     </Provider>
 )
 // AppRegistry.registerComponent(appName, () => AppH);
-AppRegistry.registerComponent(appName, () => AppRedux);
+// AppRegistry.registerComponent(appName, () => AppRedux);
+AppRegistry.registerComponent(demoName, () => AppRedux);

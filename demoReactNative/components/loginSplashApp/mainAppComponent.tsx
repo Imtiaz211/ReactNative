@@ -8,7 +8,7 @@ import HomeScreen from './homeScreens';
 
 const Stack = createStackNavigator();
 
-const MainApp = () => {
+ const ImtiazAppLearning = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Splash'>
@@ -21,4 +21,4 @@ const MainApp = () => {
     );
 }
 
-export default MainApp;
+export default ImtiazAppLearning;

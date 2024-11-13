@@ -1,8 +1,9 @@
-import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+import React from 'react';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 
 export const BackgroundImageLearning = () => {
 
-    const image = { uri:'https://legacy.reactjs.org/logo-og.png' };
+    const image = { uri: 'https://legacy.reactjs.org/logo-og.png' };
 
     return (
         <View>
