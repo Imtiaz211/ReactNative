@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-const SplashScreen = ({ navigation }) => {
+const SplashScreenRN = () => {
 
-    useEffect(() => {
-        setTimeout(() => {
-            navigation.replace('Login');
-        }, 3000); // 3 seconds delay
-    }, [navigation]);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         navigation.replace('Login');
+    //     }, 3000); // 3 seconds delay
+    // }, [navigation]);
 
     return (<View style={styleSheet.container}>
         <Text style={styleSheet.text}> Splash Screen</Text>
@@ -27,4 +27,4 @@ const styleSheet = StyleSheet.create({
 
 });
 
-export default SplashScreen;
+export default SplashScreenRN;
