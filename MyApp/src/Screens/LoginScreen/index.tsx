@@ -16,7 +16,7 @@ const LoginScreen: React.FC = () => {
       return;
     }
     console.log('Logging in with:', email, password);
-    //   navigation.navigate('Home');
+      // navigation.navigate('HomeScreen');
   };
   return (
     <View style={appStyle.container}>
@@ -61,17 +61,17 @@ const LoginScreen: React.FC = () => {
 
           <Text>or login with...</Text>
           <View style={appStyle.buttonContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleSubmit}>
               <Text>Google</Text>
             </TouchableOpacity>
           </View>
           <View style={appStyle.buttonContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleSubmit}>
               <Text>Facebook</Text>
             </TouchableOpacity>
           </View>
           <View style={appStyle.buttonContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleSubmit}>
               <Text>Twitter</Text>
             </TouchableOpacity>
           </View>
