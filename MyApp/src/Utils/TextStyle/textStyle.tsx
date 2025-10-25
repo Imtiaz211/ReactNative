@@ -4,7 +4,7 @@ const appStyle = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'cyan',
+    backgroundColor: 'green',
   },
   text: {
     fontSize: 24,
