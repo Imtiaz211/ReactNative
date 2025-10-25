@@ -1,9 +1,8 @@
 import { StyleSheet } from 'react-native'
+
 const appStyle = StyleSheet.create({
     container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: 'green',
   },
   text: {
@@ -13,6 +12,7 @@ const appStyle = StyleSheet.create({
 
  input: {
     height: 50,
+    width: '100%',
     backgroundColor: '#fff',
     borderRadius: 10,
     paddingHorizontal: 15,
@@ -29,6 +29,8 @@ const appStyle = StyleSheet.create({
 
 
   buttonContainer: {
+    height: 60,
+    width: '100%',
     marginTop: 25,
   },
 });

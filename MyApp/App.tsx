@@ -5,9 +5,7 @@ import LoginScreen from './src/Screens/LoginScreen';
 
 const App:React.FC = () =>{
   return (
-  <View style={appStyle.container}>
     <LoginScreen/>
-  </View>  
   );
 }
 
