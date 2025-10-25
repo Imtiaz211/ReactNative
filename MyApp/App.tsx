@@ -5,7 +5,7 @@ import { Text, StyleSheet, View, TextInput, Button } from 'react-native';
 
 
 
-function App() {
+const App = () =>{
   return (
   <View style={styles.container}>
     <Text style={styles.text}>Imtiaz Ahmad {'\n'} React Native Developers</Text>
