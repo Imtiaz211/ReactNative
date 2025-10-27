@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, View, TextInput, Alert, TouchableOpacity } from 'react-native';
 import appStyle from '../../Utils/TextStyle/textStyle';
-// import { useNavigation } from "@react-navigation/native";
 import btnStyle from '../../Utils/TextStyle/button';
+import ShowImage from '../../Utils/images/icons';
+
 
 const LoginScreen: React.FC = () => {
   const [email, setEmail] = React.useState('');
@@ -62,17 +63,29 @@ const LoginScreen: React.FC = () => {
           <Text>or login with...</Text>
           <View style={appStyle.buttonContainer}>
             <TouchableOpacity onPress={handleSubmit}>
-              <Text>Google</Text>
+              <ShowImage 
+              imageUrl="/Users/imtiaz_ahmad/Documents/rn/ReactNative/MyApp/src/Assets/google.jpg"
+              width={100}
+              height={100}
+              />
             </TouchableOpacity>
           </View>
           <View style={appStyle.buttonContainer}>
             <TouchableOpacity onPress={handleSubmit}>
-              <Text>Facebook</Text>
+              <ShowImage 
+              imageUrl="/Users/imtiaz_ahmad/Documents/rn/ReactNative/MyApp/src/Assets/facebook.png"
+              width={100}
+              height={100}
+              />
             </TouchableOpacity>
           </View>
           <View style={appStyle.buttonContainer}>
             <TouchableOpacity onPress={handleSubmit}>
-              <Text>Twitter</Text>
+              <ShowImage 
+              imageUrl="/Users/imtiaz_ahmad/Documents/rn/ReactNative/MyApp/src/Assets/twitter.png"
+              width={100}
+              height={100}
+              /> 
             </TouchableOpacity>
           </View>
         </View>
