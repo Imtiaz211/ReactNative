@@ -8,16 +8,18 @@ import ShowImage from '../../Utils/images/icons';
 const LoginScreen: React.FC = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  // const navigation = useNavigation();
+  
 
   const handleSubmit = () => {
     console.log('Logging ');
     if (email === '' && password === '') {
       Alert.alert('Erro', 'Please enter both email and password');
       return;
+    } else {
+        console.log('Sucess');
+        // navigation.navigate('Home');
     }
-    console.log('Logging in with:', email, password);
-      // navigation.navigate('HomeScreen');
+  
   };
   return (
     <View style={appStyle.container}>
